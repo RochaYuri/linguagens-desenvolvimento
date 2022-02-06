@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(208, 255, 235);
+}
+
+header{
+    color: rgb(2, 54, 52);
+    margin: 100px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: rgb(2, 54, 52);
+}
+
+.backend, .frontend, .bancodados, .versionamento{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backend .imagem, .frontend .imagem, .bancodados .imagem, .versionamento .imagem{
+    width: 5%;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+img{
+    max-width: 100%;
+}
+
+@media screen and (max-width:1024px){
+    .backend .imagem, .frontend .imagem, .bancodados .imagem, .versionamento .imagem{
+        width: 10%;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    h4{
+        margin-left: 0;
+        text-align: center;
+        margin-top: 35px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .backend .imagem, .frontend .imagem, .bancodados .imagem, .versionamento .imagem{
+        width: 25%;
+        margin-left: 15px;
+        margin-top: 70px;
+        text-align: left;
+    }
+
+    h4{
+        margin-top: 70px;
+        font-size: 25px;
+        text-align: center;
+    }
+}
