@@ -32,13 +32,20 @@ ul.a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-footer{
+.direitos{
     position: fixed;
     text-align: center;
     width: 100%;
     bottom: 0;
     color: white;
     background-color: rgb(7, 37, 82);
+}
+
+.voltar img{
+    width: 100px;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
 }
 
 iframe{
@@ -49,7 +56,7 @@ iframe{
     height: 315px;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1030px){
     .sobre{
         padding-bottom: 0;
         padding-top: 0;
@@ -67,6 +74,9 @@ iframe{
         height: 210px;
         margin: 2% 25%;
         margin-bottom: 8%;
+    }
+    .voltar img{
+        width: 75px
     }
 }
 
@@ -87,7 +97,10 @@ iframe{
         margin-left: 25%;
         margin-top: 0;
         margin-bottom: 8%;
-        width: 185px;
-        height: 120px;
+        width: 270px;
+        height: 170px;
+    }
+    .voltar img{
+        width: 50px
     }
 }
