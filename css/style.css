@@ -7,14 +7,33 @@
 /* index.html */
 
 .header {
-    color: #afabab;
+    color: rgba(34, 33, 33, 0.616);
     background-color: #f5deb388;
-    height: 5vh;
+    height: 100%;
+    min-height: 5vh;
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header button {
+    background-color: transparent;
+    border: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    border-bottom-color: rgb(76, 5, 143);
+}
+
+.header a {
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgba(34, 33, 33);
 }
 
 body {
@@ -40,19 +59,21 @@ body {
     gap: 5px 0;
     align-items: center;
     width: 80vw;
-    height: 70vh;
+    height: 100%;
+    min-height: 70vh;
     margin-top: 10vh;
     background-color: #f5deb388;
     border-radius: 55px;
 }
 
-h4 {
+.tituloSecao {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: #afabab;
     margin: 0 auto;
+    text-align: center;
     padding: 5px;
-    width: 205px;
+    width: 225px;
     border-radius: 15px;
     background-color: rgba(34, 33, 33, 0.616);
 }
@@ -65,8 +86,8 @@ h4 {
 }
 
 .imagem {
-    max-width: 55px;
-    margin: 20px 20px;
+    width: 55px;
+    margin: 20px;
     transition: 0.1s;
 }
 
@@ -74,8 +95,8 @@ h4 {
     scale: 1.5;
 }
 
-img {
-    max-width: 100%;
+.imagem img {
+    width: 75px;
 }
 
 .frontend {
@@ -98,36 +119,54 @@ img {
     width: 100vw;
 }
 
-@media screen and (max-width:1024px) {
-    .backend .imagem, .frontend .imagem, .bancodados .imagem, .versionamento .imagem{
-        width: 10%;
-        margin-left: 15px;
-        margin-top: 30px;
-    }
+@media screen and (min-width: 279px) and (max-width: 320px) {
 
-    h4{
-        margin-left: 0;
-        text-align: center;
-        margin-top: 35px;
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .backend .imagem, .frontend .imagem, .bancodados .imagem, .versionamento .imagem{
-        width: 25%;
-        margin-left: 15px;
-        margin-top: 70px;
-        text-align: left;
-    }
-
-    h4{
-        margin-top: 70px;
-        font-size: 25px;
+    .header h2 {
         text-align: center;
     }
-}
 
+    .header button {
+        border: 3px solid rgb(76, 5, 143);
+        margin: 10px;
+        padding: 5px;
+        width: 50vw;
+        border-radius: 10px;
+    }
+
+    .header button:hover {
+        background-color: #afabab;
+        color: black;
+    }
+    .conteudoPrincipal {
+        margin-bottom: 30px;
+    }
+
+    .imagemContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagem {
+        margin: 20px;
+    }
+    
+    .imagem img {
+        width: 65px;
+        margin: 0;
+    }
+
+    .primeiro {
+        margin-top: 50px;
+    }
+
+    .tituloSecao{
+        margin-top: 0px;
+        font-size: 25px;
+        text-align: center;
+    }
+}
 
 /* paginas das linguagens */
 
