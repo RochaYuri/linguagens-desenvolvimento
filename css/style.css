@@ -220,9 +220,8 @@ ul.a {
     background-color: rgb(7, 37, 82);
 }
 
-.voltar {
-    width: 45px;
-    
+.voltar img {
+    max-width: 45px;
     position: fixed;
     bottom: 5%;
     left: 5%;
@@ -234,51 +233,117 @@ ul.a {
     width: 100%;
 }
 
-@media screen and (max-width:1030px) {
-    .sobre {
-        padding-bottom: 0;
-        padding-top: 0;
-        padding: 50px;
-    }
-    .subtitulo {
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-    .titulo {
+@media screen and (min-width: 1921px) {
+
+    .conteudo {
         width: 45%;
-    }
-    iframe {
-        width: 360px;
-        height: 210px;
-        margin: 2% 25%;
-        margin-bottom: 8%;
-    }
-    .voltar img {
-        width: 75px
     }
 }
 
-@media screen and (max-width:768px) {
-    .sobre {
-        padding-bottom: 0;
-        padding-top: 0;
-        padding: 50px;
-    }
-    .subtitulo {
-        padding-bottom: 0;
-        padding-top: 0;
-    }
+@media screen and (min-width: 769px) and (max-width:1030px) {
+
     .titulo {
-        width: 60%;
+        width: 100%;
     }
-    iframe {
-        margin-left: 25%;
-        margin-top: 0;
-        margin-bottom: 8%;
-        width: 270px;
-        height: 170px;
+
+    .titulo img {
+        width: 80vw;
     }
-    .voltar img {
-        width: 50px
+
+    .sobre {
+        padding: 10px;
+    }
+
+    .video {
+        align-items: center;
+    }
+
+    .video iframe{
+        width: 80%;
+    }
+
+    .conteudo {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+    .titulo {
+        width: 100%;
+    }
+
+    .titulo img {
+        width: 80vw;
+    }
+
+    .sobre {
+        padding: 10px;
+    }
+
+    .video {
+        align-items: center;
+    }
+
+    .video iframe{
+        width: 100%;
+    }
+
+    .conteudo {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+
+    .titulo {
+        width: 100%;
+    }
+
+    .titulo img {
+        width: 80vw;
+    }
+
+    .sobre {
+        padding: 10px;
+    }
+
+    .video {
+        align-items: center;
+    }
+
+    .video iframe{
+        width: 100%;
+    }
+
+    .conteudo {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .titulo {
+        width: 100%;
+    }
+
+    .titulo img {
+        width: 80vw;
+    }
+
+    .sobre {
+        padding: 10px;
+    }
+
+    .video {
+        align-items: center;
+    }
+
+    .video iframe{
+        width: 100%;
+    }
+
+    .conteudo {
+        margin-bottom: 35px;
     }
 }
